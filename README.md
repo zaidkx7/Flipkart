@@ -87,7 +87,6 @@ Flipkart/
 │   ├── api/                   # FastAPI application
 │   │   ├── main.py           # Application entry point
 │   │   ├── routers/          # API route handlers
-│   │   └── *.json           # API response examples
 │   ├── modules/              # Scraping modules
 │   │   └── flipkart/        # Flipkart-specific scraper
 │   ├── settings/            # Configuration files
@@ -185,6 +184,9 @@ MYSQL_PORT=3306
 MYSQL_USER='root'
 MYSQL_PASSWORD=''
 MYSQL_DB='flipkart'
+
+cd backend\alchemy
+python create_tables.py
 ```
 
 ### Frontend Configuration
